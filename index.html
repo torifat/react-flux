@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>React, Flux &amp; ...</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section data-bespoke-state="react">
+        <h1>React, Flux &amp; ...</h1>
+      </section>
+      <section data-bespoke-state="react"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCXdpZHRoPSI2MDBweCIgaGVpZ2h0PSI2MDBweCIgdmlld0JveD0iMCAwIDYwMCA2MDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYwMCA2MDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cmVjdCBmaWxsPSIjMjIyMjIyIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIvPgo8Y2lyY2xlIGZpbGw9IiMwMEQ4RkYiIGN4PSIyOTkuNTI5IiBjeT0iMjk5LjYyOCIgcj0iNTAuMTY3Ii8+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwRDhGRiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMjk5LjUyOSwxOTcuNjI4CgljNjcuMzU2LDAsMTI5LjkyOCw5LjY2NSwxNzcuMTA3LDI1LjkwN2M1Ni44NDQsMTkuNTY5LDkxLjc5NCw0OS4yMzMsOTEuNzk0LDc2LjA5M2MwLDI3Ljk5MS0zNy4wNDEsNTkuNTAzLTk4LjA4Myw3OS43MjgKCWMtNDYuMTUxLDE1LjI5MS0xMDYuODc5LDIzLjI3Mi0xNzAuODE4LDIzLjI3MmMtNjUuNTU0LDAtMTI3LjYzLTcuNDkyLTE3NC4yOS0yMy40NDFjLTU5LjA0Ni0yMC4xODItOTQuNjExLTUyLjEwMy05NC42MTEtNzkuNTU5CgljMC0yNi42NDIsMzMuMzctNTYuMDc2LDg5LjQxNS03NS42MTZDMTY3LjM5OCwyMDcuNTAzLDIzMS41MTUsMTk3LjYyOCwyOTkuNTI5LDE5Ny42Mjh6Ii8+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwRDhGRiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMjEwLjczNiwyNDguOTIyCgljMzMuNjQ5LTU4LjM0OCw3My4yODEtMTA3LjcyNCwxMTAuOTItMTQwLjQ4YzQ1LjM1LTM5LjQ2Niw4OC41MDctNTQuOTIzLDExMS43NzUtNDEuNTA1CgljMjQuMjQ4LDEzLjk4MywzMy4wNDIsNjEuODE0LDIwLjA2NywxMjQuNzk2Yy05LjgxLDQ3LjYxOC0zMy4yMzQsMTA0LjIxMi02NS4xNzYsMTU5LjYwMQoJYy0zMi43NDksNTYuNzg4LTcwLjI1LDEwNi44MTktMTA3LjM3NywxMzkuMjcyYy00Ni45ODEsNDEuMDY4LTkyLjQsNTUuOTI5LTExNi4xODUsNDIuMjEzCgljLTIzLjA3OS0xMy4zMS0zMS45MDYtNTYuOTIxLTIwLjgzNC0xMTUuMjMzQzE1My4yODEsMzY4LjMxNiwxNzYuNzU4LDMwNy44NDEsMjEwLjczNiwyNDguOTIyeiIvPgo8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMEQ4RkYiIHN0cm9rZS13aWR0aD0iMjQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTIxMC44MjEsMzUxLjQ4MgoJYy0zMy43NDYtNTguMjkyLTU2LjczMS0xMTcuMjg3LTY2LjMxMi0xNjYuMjU1Yy0xMS41NDQtNTguOTk5LTMuMzgyLTEwNC4xMDksMTkuODY0LTExNy41NjYKCWMyNC4yMjQtMTQuMDI0LDcwLjA1NSwyLjI0NCwxMTguMTQsNDQuOTRjMzYuMzU2LDMyLjI4LDczLjY4OCw4MC44MzcsMTA1LjcyMywxMzYuMTczYzMyLjg0NCw1Ni43MzMsNTcuNDYxLDExNC4yMDksNjcuMDM2LDE2Mi41ODIKCWMxMi4xMTcsNjEuMjEzLDIuMzA5LDEwNy45ODQtMjEuNDUzLDEyMS43NGMtMjMuMDU3LDEzLjM0OC02NS4yNDktMC43ODQtMTEwLjIzOS0zOS40OTkKCUMyODUuNTY3LDQ2MC44ODYsMjQ0Ljg5OCw0MTAuMzQ0LDIxMC44MjEsMzUxLjQ4MnoiLz4KPC9zdmc+Cg==" alt="React Logo">
+        <h1 class="pad">React</h1>
+      </section>
+      <section data-bespoke-state="react">
+        <h1>React</h1>
+        <h3>a javascript library for building user interfaces</h3>
+      </section>
+      <section data-bespoke-state="react">
+        <h1 class="fat"><span class="white">M</span>V<span class="white">C</span></h1>
+      </section>
+      <section data-bespoke-state="react">
+        <h2>What's so special about it?</h2>
+      </section>
+      <section data-bespoke-state="react">
+        <h1 class="fat">EVERYTHING</h1>
+      </section>
+      <section data-bespoke-state="react">
+        <h2>Isomorphic JavaScript</h2>
+        <ul class="bullet">
+          <li>SEO</li>
+          <li>Performance</li>
+          <li>Maintainability</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="react">
+        <h2>Others</h2>
+        <ul class="bullet">
+          <li>Modularity</li>
+          <li>Easy Mental Model</li>
+          <li>Embrace Immutability</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="react">
+        <h2>Thinking in React</h2>
+      </section>
+      <section data-bespoke-state="react white"></section>
+      <section data-bespoke-state="react ben">
+        <h2 class="caps">With great power</h2>
+        <h2 class="caps">comes great responsibility</h2>
+      </section>
+      <section data-bespoke-state="flux"><img src="images/flux_logo.svg" width="25%" alt="Flux Logo">
+        <h1 class="pad">Flux</h1>
+      </section>
+      <section data-bespoke-state="flux">
+        <h1>Flux</h1>
+        <h3>application architecture for building user interfaces</h3>
+      </section>
+      <section data-bespoke-state="flux flux-lt"><img src="images/flux-diag-01.png" width="120%" alt="Diagram 01"></section>
+      <section data-bespoke-state="flux flux-lt"><img src="images/flux-diag-02.png" width="120%" alt="Diagram 02"></section>
+      <section data-bespoke-state="react">
+        <pre class="language-javascript"><code>shouldComponentUpdate</code></pre>
+      </section>
+      <section data-bespoke-state="im-js">
+        <h1>Immutable.js</h1>
+      </section>
+      <section data-bespoke-state="im-js">
+        <pre class="language-javascript"><code>var person1 = {
+  firstName: 'Rahim',
+  lastName: 'Uddin'
+};
+
+var person2 = {
+  firstName: 'Rahim',
+  lastName: 'Uddin'
+};
+
+console.log(person1 == person2); // false
+console.log(person1 === person2); // false
+</code></pre>
+      </section>
+      <section data-bespoke-state="im-js">
+        <pre class="language-javascript"><code>var Immutable = require('immutable');
+
+var person1 = Immutable.fromJS({
+  firstName: 'Rahim',
+  lastName: 'Uddin'
+});
+
+var person2 = Immutable.fromJS({
+  firstName: 'Rahim',
+  lastName: 'Uddin'
+});
+
+console.log(Immutable.is(person1, person2)); // true
+console.log(person1.equals(person2)); //true
+</code></pre>
+      </section>
+      <section data-bespoke-state="react">
+        <h1>What Next?</h1>
+      </section>
+      <section data-bespoke-state="react">
+        <h1>React Native</h1>
+      </section>
+      <section data-bespoke-state="react">
+        <h1>Relay</h1>
+      </section>
+      <section data-bespoke-state="react">
+        <h1>GraphQL</h1>
+      </section>
+      <section data-bespoke-state="react">
+        <h1 class="thanks">Thank You</h1>
+        <h3><a href="https://twitter.com/rifat" class="twitter">@rifat </br></a><a href="https://fb.me/rifat" class="fb">fb.me/rifat</a></h3><img src="images/profile.jpg" class="avatar avatar--small">
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
